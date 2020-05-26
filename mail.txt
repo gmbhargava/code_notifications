@@ -1,0 +1,64 @@
+Subject: Test Automation Execution Summary - $PLAN_NAME ($BRANCH_NAME)
+MIME-Version: 1.0
+Content-Type: text/html; charset="utf8"
+X-Priority: 1
+
+<html>
+<body>
+<h1>Test Automation Execution Summary:</h1>
+<font size="2" face="Calibri" >
+<table style="width: 862px" border="5" cellpadding="5">
+	<tbody>
+	    <tr style="height: 23px">
+            <td style="height: 23px width: 148px">Build Status</td>
+            <td bgcolor="$COLOR_CODE" style="height: 23px width: 713px">$RUN_STATUS</td>
+    	</tr>
+        <tr style="height: 23px">
+        	<td style="height: 23px width: 148px">VM Name</td>
+        	<td style="height: 23px width: 713px">$VM_NAME</td>
+        </tr>
+		<tr style="height: 23px">
+			<td style="height: 23px width: 148px">Plan Name</td>
+			<td style="height: 23px width: 713px">$PLAN_NAME</td>
+		</tr>
+		<tr style="height: 23px">
+			<td style="height: 23px width: 148px">Branch</td>
+			<td style="height: 23px width: 713px">$BRANCH_NAME</td>
+		</tr>
+		<tr style="height: 23px">
+            <td style="height: 23px width: 148px">Build Url</td>
+            <td style="height: 23px width: 713px"><a href="$BUILD_URL">$BUILD_URL</a></td>
+        </tr>
+        <tr style="height: 23px">
+            <td style="height: 23px width: 148px">Build Date</td>
+            <td style="height: 23px width: 713px">$BUILD_TIMESTAMP</td>
+        </tr>
+        <tr style="height: 23px">
+            <td style="height: 23px width: 148px">Triggered By</td>
+            <td style="height: 23px width: 713px">$USER</td>
+        </tr>
+		<tr style="height: 23px">
+            <td style="height: 23px width: 148px">Tags Executed</td>
+            <td style="height: 23px width: 713px">$TAGS</td>
+        </tr>
+		<tr style="height: 23px">
+			<td style="height: 23px width: 148px">Html Reports</td>
+			<td style="height: 23px width: 713px"><a href="$APRO_REPORTS_PATH">$APRO_REPORTS_PATH</a></td>
+		</tr>
+		<tr style="height: 23px">
+            <td style="height: 23px width: 148px">Duration</td>
+            <td style="height: 23px width: 713px">$DURATION</td>
+         </tr>
+         <tr style="height: 23px">
+             <td style="height: 23px width: 148px">VM Ops</td>
+             <td style="height: 23px width: 713px">
+                <div>
+                    <a href="https://build.pruconnect.net/browse/EISDMP-GSSTOPVM">STOP VM</a>
+                    <a href="https://build.pruconnect.net/browse/EISDMP-GSSTARTVM">START VM</a>
+                </div>
+             </td>
+         </tr>
+    </tbody>
+</table>
+</body>
+</html>
