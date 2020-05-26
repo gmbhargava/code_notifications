@@ -1,0 +1,9 @@
+#!/bin/bash
+
+#This shell script creates winmail.txt file with email summary
+source config/email/configure_mail_summary.sh
+
+curl --url "smtp://mailsg.intranet.asia:25" --ssl-reqd -T winmail.txt --insecure \
+--mail-from 'no-reply@eastspring.com' \
+--mail-rcpt 'xx@xxx.com' \
+--mail-rcpt 'ttt@gg.com'
